@@ -1,0 +1,70 @@
+@import url(reset.css);
+
+h1 {
+    font-family: 'Luckiest Guy', 'Open Sans', Arial;
+    font-weight: normal;
+    font-size: 2rem;
+    width: 200px;
+}
+
+h2 {
+    font-weight: 800;
+}
+
+p {
+    font-size: 1rem;
+}
+
+#section-4 h2 {
+    font-family: 'Luckiest Guy', 'Open Sans', Arial;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+#header {
+    color: white;
+    background-image: url(../images/Header\ Background.png);
+    background-size: cover;
+    height: 506px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    justify-content: center;
+    gap: 24px;
+}
+
+button {
+    height: 54px;
+    border: none;
+    border-radius: 28px;
+    font-family: 'Open Sans', Arial;
+    font-size: 1rem;
+    color: #23272A;
+}
+
+button#open {
+    color: white;
+    background-color: #23272A;
+}
+
+#section-2, #section-4 {
+    background-color: #F6F6F6;
+}
+
+section {
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+section img {
+    max-width: 100%;
+}
+
+footer {
+    height: 140px;
+    background-color: #23272A;
+    text-align: center;
+    padding-top: 44px;
+}
