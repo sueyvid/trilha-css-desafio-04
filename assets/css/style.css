@@ -21,16 +21,24 @@ p {
     font-size: 2rem;
 }
 
-#header {
-    color: white;
-    background-image: url(../images/Header\ Background.png);
+header {
+    background-image: url(../images/Header\ Background\ mobile.png);
     background-size: cover;
-    height: 506px;
+}
+
+div#header {
+    padding: 64px 24px;
+    color: white;
     display: flex;
     flex-direction: column;
-    padding: 0 24px;
     justify-content: center;
     gap: 24px;
+}
+
+#botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 button {
@@ -47,11 +55,12 @@ button#open {
     background-color: #23272A;
 }
 
-#section-2, #section-4 {
+.cinza {
     background-color: #F6F6F6;
 }
 
-section {
+section div{
+    max-width: 1260px;
     padding: 40px 24px;
     display: flex;
     flex-direction: column;
@@ -66,5 +75,102 @@ footer {
     height: 140px;
     background-color: #23272A;
     text-align: center;
+}
+
+footer img {
     padding-top: 44px;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        background-image: url(../images/Header\ Background.png);
+        height: 459px;
+        background-position: center;
+    }
+    
+    div#header {
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+    }
+
+    #botoes {
+        flex-direction: row;
+    }
+
+    button {
+        padding: 0 24px;
+    }
+
+    section img {
+        width: 100%;
+        max-width: 678px;
+        grid-area: img;
+        justify-self: end;
+        align-self: center;
+    }
+    
+    #section-4 img {
+        justify-self: start;
+    }
+
+    section div {
+        margin: 0 auto;
+        display: grid;
+        grid-template: 
+        "img titulo" auto
+        "img texto" 110px
+        / 1.5fr 1fr;
+        gap: 16px;
+    }
+    
+    section div#section-2 {
+        display: grid;
+        grid-template: 
+        "titulo img" auto
+        "texto img" 110px
+        /1fr 1.5fr;
+        justify-items: end;
+    }
+
+    section div#section-4 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    section div#section-4 h2 {
+        align-self: center;
+        max-width: 100%;
+        font-size: 2.5rem;
+    }
+
+    section div#section-4 p {
+        align-self: center;
+        max-width: 100%;
+    }
+
+    section div#section-4 img {
+        max-width: 1180px;
+    }
+
+    section h2 {
+        max-width: 330px;
+        font-size: 2.5rem;
+        align-self: end;
+        max-height: 500px;
+        grid-area: titulo;
+    }
+    
+    section p {
+        max-width: 330px;
+        max-height: 110px;
+        grid-area: texto;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        width: 313px;
+    }
 }
